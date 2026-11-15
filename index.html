@@ -51,9 +51,10 @@
     <li><strong>Invites</strong>: who was invited to an event, who invited them, and when.</li>
     <li><strong>Comments and reactions</strong>: what you write on an event, any emoji reactions, and when.</li>
     <li><strong>Scheduling polls</strong>: the poll title and times, the Root user ID of the person who made it, the times you mark as free, and who was invited to the poll.</li>
-    <li><strong>Community settings</strong>: things like the community's time zone, time format, category colours and which roles can create events, whether admins have turned on Next up or voice channels for events, and which channel group voice channels go in.</li>
+    <li><strong>Community settings</strong>: things like the community's time zone, time format, category colours and which roles can create events, whether admins have turned on Next up, voice channels for events or event recaps, and which channel group voice channels go in.</li>
     <li><strong>Next up</strong>: if an admin turns it on, the app saves the channel description that was there before, so it can put it back when Next up is turned off.</li>
     <li><strong>Voice channels for events</strong>: if an admin turns it on, the app keeps the ID and name of each voice channel it makes, which event it belongs to and when it was made, so it can remove the channel later.</li>
+    <li><strong>Event recap photos</strong>: if an admin turns on event recaps, people whose reply was Going can add photos after it ends. The app keeps each photo, a small copy for the grid, the Root user ID of the person who added it, and when.</li>
     <li><strong>Admin activity log</strong>: when an event is changed, the app records what happened, who did it (their Root user ID and display name), the event title and the time. Only the newest 100 entries are kept.</li>
   </ul>
 
@@ -66,6 +67,7 @@
 
   <h2>Images</h2>
   <p>When you add a photo to an event, your device saves a new copy of it before upload. This removes hidden photo details, such as where the photo was taken. Animated GIFs are uploaded exactly as they are, so they keep any details saved in the file.</p>
+  <p>Event recap photos are saved again by the app before they are kept, which also removes hidden photo details. GIFs can't be added to a recap.</p>
 
   <h2>Where your information is stored</h2>
   <p>Everything the app keeps is stored in the database that Root provides for the app. <a href="https://www.rootapp.com/privacy-policy">Root's own privacy policy</a> covers how Root stores and protects that data.</p>
@@ -75,7 +77,8 @@
   <h2>Who can see it</h2>
   <ul>
     <li>Members of the community can see public events, everyone's reply (going, maybe, not going or waiting) and the comments on them.</li>
-    <li>Private events are only shown to the person who created them and the people they invite.</li>
+    <li>Private events, and any recap photos on them, are only shown to the person who created them and the people they invite.</li>
+    <li>Recap photos on a public event can be seen by anyone who can see the event.</li>
     <li>Community admins can see the admin activity log, which includes event titles, private ones too.</li>
     <li>When someone creates a public event, the app posts a short message about it in the community's default channel. Private events are never posted.</li>
     <li>When someone creates a poll, they can choose to post a short message about it in the community's default channel.</li>
@@ -95,7 +98,8 @@
   <ul>
     <li>You can change your RSVP, or leave a waitlist, until the event ends.</li>
     <li>You can delete your own comments. Admins can delete comments too.</li>
-    <li>When an event is deleted, its RSVPs, invites and comments are deleted with it.</li>
+    <li>When an event is deleted, its RSVPs, invites, comments and recap photos are deleted with it.</li>
+    <li>You can remove a recap photo you added. The event's creator, and admins who can see the event, can remove recap photos too. If an admin turns recaps off, photos are hidden but kept, and come back if recaps are turned on again.</li>
     <li>Voice channels the app made are removed an hour after the event ends, or sooner if the event is cancelled or deleted.</li>
     <li>Community admins can clear the admin activity log.</li>
   </ul>
